@@ -15,7 +15,7 @@ export default class Favorites extends React.PureComponent {
 
     constructor(props) {
         super(props);
-        this.state = {date: 0, base: 123};
+        this.state = {date: 0, base: 123,};
         console.log('state', this.state);
         console.log('props', this.props);
     }
@@ -41,12 +41,33 @@ export default class Favorites extends React.PureComponent {
     render() {
         const {loading, data} = this.props;
 
-        console.log(this.props.data);
+        let dataBase;
+
+        if (data === undefined) {
+            console.log(data);
+            dataBase = new Array({updated: 0});
+        } else {
+            _.map(data, function (object) {
+               if (object.coin === 'ADA') {
+                   console.log(object);
+               }
+            });
+            dataBase = data;
+        }
+
+        console.log(dataBase[0]);
+
+
 
         return (
             <div>
                 <h1 style={{color: 'white'}}>Hello, world!</h1>
                 <h2 style={{color: 'white'}}>It is {this.state.date}.</h2>
+                <h3>
+                    {
+                        dataBase[0].updated
+                    }
+                </h3>
             </div>
         );
     }
