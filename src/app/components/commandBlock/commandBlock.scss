@@ -1,0 +1,13 @@
+:local .command {
+  display: flex;
+  button:first-child {
+    margin-right: 5px;
+  }
+
+  button:last-child {
+    margin-left: 5px;
+  }
+  button {
+    flex: 1;
+  }
+}

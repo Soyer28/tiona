@@ -1,0 +1,20 @@
+:local .configBlock {
+  :global(.ant-form-item) {
+    margin-bottom: 0;
+  }
+}
+
+:local .removeIcon {
+  color: #8b0000;
+  margin: 10px 0;
+  font-size: 8pt;
+  cursor: pointer;
+
+  &:hover {
+    color: #f40000;
+  }
+}
+
+:local .row {
+  align-items: center;
+}

@@ -1,0 +1,48 @@
+:local .strategy1 {
+  h1 {
+    display: flex;
+    align-items: center;
+    a {
+      margin-left: 10px;
+    }
+    a:first-child {
+      color: white;
+    }
+    a:last-child {
+      background: initial;
+      border: 2px solid white;
+    }
+  }
+  .arrowIcon {
+    margin-right: 5px;
+  }
+
+  .strategyTitle {
+    display: flex;
+    .link {
+      margin-right: 10px;
+    }
+    .id {
+      color: #999999;
+    }
+  }
+
+  .strategyDescription {
+    display: flex;
+    & > div {
+      margin-right: 10px;
+    }
+  }
+}
+
+.ant-spin-nested-loading > .ant-spin-container > form.ant-form {
+  background: initial !important;
+}
+
+.ant-spin-nested-loading > .ant-spin-container > form.ant-form label {
+  color: white;
+}
+
+//.ant-spin-nested-loading > .ant-spin-container > form.ant-form .ant-form-item-control-wrapper {
+//  width: 10%;
+//}

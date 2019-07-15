@@ -1,0 +1,365 @@
+:local .favorites {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  div:first-child {
+    flex: 2;
+    order: 1;
+  }
+
+  div:nth-child(2) {
+    flex: 2;
+    order: 2;
+  }
+
+  div:last-child {
+    flex: 2;
+    order: 3;
+  }
+
+  .tableM1 {
+    flex: 2;
+    order: 1;
+  }
+
+  .tableM2 {
+    flex: 2;
+    order: 2;
+  }
+
+  .tableM3 {
+    flex: 2;
+    order: 3;
+  }
+
+  tr td {
+    border: 1px solid gray;
+  }
+
+  th, td {
+    border: 1px solid #dddddd;
+    padding: 2px 10px;
+    font-size: 8pt;
+  }
+
+  tr > table {
+    display: table-cell;
+  }
+
+}
+
+.traidingViewFavorites {
+
+}
+
+:local .commands {
+  margin-bottom: 10px;
+  b, span {
+    color: white;
+    font-size: 1vw;
+  }
+  span {
+    font-size: 15px;
+  }
+  .form {
+    display: inline-block;
+    background-color: initial !important;
+    float: right;
+    height: 30px;
+
+    div {
+      display: inline-block;
+    }
+
+    label {
+      color: white;
+    }
+
+    div > div {
+      line-height: initial;
+      display: inline-block;
+    }
+  }
+  .form2 {
+    display: inline-block;
+    background-color: initial !important;
+    padding-left: 2%;
+    height: 30px;
+
+    div {
+      display: inline-block;
+    }
+
+    label {
+      color: white;
+    }
+
+    div > div {
+      line-height: initial;
+      display: inline-block;
+    }
+  }
+}
+
+:local .legend {
+  float: right;
+  margin: 0 8px;
+  background-color: initial !important;
+  color: #f2a10d;
+  span {
+    color: #f2a10d;
+  }
+}
+:local .legend:hover {
+  border: 1px solid white !important;
+  span {
+    color: white;
+  }
+}
+
+:local .FavForm {
+  background-color: #ffffff !important;
+}
+
+ul.ant-pagination.ant-table-pagination {
+  display: none;
+}
+
+#myCheck {
+  border: initial;
+  margin: 0 15px 0 5px;
+  background-color: initial;
+}
+
+#myCheck > i > svg {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+tbody.ant-table-tbody > tr > td:nth-child(n+4) {
+  padding: 0 !important;
+}
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+  padding: 0 15px;
+  text-align: center;
+  line-height: 2vh;
+}
+
+tbody.ant-table-tbody > tr > td:nth-child(1) {
+  border: none;
+  padding: 0;
+  min-width: 5px;
+}
+
+thead.ant-table-thead > tr:first-child > th:first-child {
+  min-width: 0 !important;
+  width: 0 !important;
+  border: none;
+}
+
+.ant-table-row-expand-icon {
+  background: initial;
+}
+
+.ant-table-thead > tr {
+  background-color: initial;
+  color: white;
+
+}
+
+.ant-table-thead > tr:nth-child(2) > th,
+.ant-table-thead > tr:nth-child(1) > th:not(:first-child) {
+  background-color: initial;
+  text-align: center !important;
+  border: none;
+  color: white;
+  font-size: 17px;
+}
+
+tr.ant-table-expanded-row.ant-table-expanded-row-level-1 {
+  border-bottom: 5px solid #ffcc55;
+  border-top: initial;
+}
+
+tr.ant-table-expanded-row.ant-table-expanded-row-level-1 > td:nth-child(2) {
+  background-color: initial;
+  border: none;
+  text-align: left;
+}
+
+tr.ant-table-expanded-row.ant-table-expanded-row-level-1 div {
+  display: inline-block;
+  margin-right: 1.5vw;
+  padding: 5px 0;
+}
+
+tr.ant-table-expanded-row.ant-table-expanded-row-level-1 div span {
+  font-size: 12px;
+}
+tr.ant-table-expanded-row.ant-table-expanded-row-level-1 div p {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+thead.ant-table-thead {
+  border-top: 1px solid white;
+  border-bottom: 2px solid white;
+}
+
+tr.ant-table-row.ant-table-row-level-0 td {
+  border: none;
+  border-top: 1px solid #ffffff8f  !important;
+  border-bottom: 1px solid #ffffff8f !important;
+  color: white;
+}
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
+  background: initial;
+}
+
+
+tr.ant-table-row.ant-table-row-level-0:hover {
+  background: linear-gradient(45deg, #1fe7f1, transparent);
+}
+
+tr.ant-table-row.ant-table-row-level-0 > td:nth-child(3) {
+  font-size: 12px;
+  padding: 7px 0;
+}
+
+.ant-table-thead > tr > th.ant-table-column-has-actions.ant-table-column-has-sorters:hover,
+.ant-table-thead > tr > th.ant-table-column-has-actions.ant-table-column-has-sorters:hover svg{
+  color: black;
+}
+
+tr.ant-table-row.ant-table-row-level-0 > td {
+  font-weight: 700;
+  color: #e4e4e4;
+}
+
+thead.ant-table-thead > tr:first-child > th:last-child > span {
+  background-color: #ffffff30;
+  padding: 0 7px;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.ant-notification.ant-notification-topRight {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  list-style: none;
+  position: fixed;
+  z-index: 1010;
+  width: 384px;
+  max-width: calc(100vw - 32px);
+  margin-right: 24px;
+}
+
+.ant-notification-notice {
+  position: relative;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  overflow: hidden;
+  line-height: 1.5;
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 12px rgba(255, 255, 255, 0.79);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.79);
+}
+
+a.ant-notification-notice-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 7px 12px 0 0;
+}
+
+a.ant-notification-notice-close i svg {
+  color: black;
+}
+
+span.ant-notification-notice-btn {
+  float: right;
+  margin-top: 12px;
+}
+
+.ant-notification-notice-message {
+  color: black;
+  font-weight: 500;
+}
+
+.ant-notification-notice-description {
+  white-space: pre-line;
+}
+
+:local .iconConnect {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 15px;
+}
+
+@keyframes blink {
+  50% { opacity: 0.0; }
+}
+@-webkit-keyframes blink {
+  50% { opacity: 0.0; }
+}
+
+.ant-table-row-expand-icon-cell {
+  width: initial;
+  min-width: initial;
+}
+
+thead.ant-table-thead > tr > th:nth-child(2) {
+  padding: 0;
+  margin: 0;
+  width: initial;
+}
+
+tr.ant-table-row.ant-table-row-level-0 > td:nth-child(2) {
+  width: 5px;
+  padding: 0;
+}
+
+span.ant-modal-close-x > i > svg {
+  color: black;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + span {
+  color:#f2f2f2;
+  font-family: Arial, sans-serif;
+  font-size:14px;
+}
+
+input[type="radio"] + span {
+  display:inline-block;
+  width:19px;
+  height:19px;
+  margin:-1px 4px 0 0;
+  vertical-align:middle;
+  background:url(http://webdesigntutsplus.s3.amazonaws.com/tuts/391_checkboxes/check_radio_sheet.png) -38px top no-repeat;
+  cursor:pointer;
+}
+
+input[type="radio"]:checked + span {
+  background:url(http://webdesigntutsplus.s3.amazonaws.com/tuts/391_checkboxes/check_radio_sheet.png) -57px top no-repeat;
+}
+
+html.theme-dark #widget-container {
+  border-color: #54bd00;
+}

@@ -1,0 +1,17 @@
+:local .loginPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #dddddd;
+
+  form {
+    background: #ffffff;
+    h1 {
+      user-select: none;
+    }
+    width: 500px;
+    box-shadow: 0 0 29px -4px rgba(0, 0, 0, 0.66);
+    padding: 20px;
+  }
+}

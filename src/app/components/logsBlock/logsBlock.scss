@@ -1,0 +1,23 @@
+:local .logs {
+
+  min-width: 500px;
+  overflow: auto;
+  .orderField {
+    user-select: all;
+  }
+
+  table {
+    table-layout: fixed;
+    font-size: 8pt;
+    td {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 2px;
+    }
+    th {
+      padding: 2px;
+    }
+  }
+
+}

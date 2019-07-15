@@ -1,0 +1,27 @@
+:local .strategy1 {
+  .dashboard {
+    display: flex;
+    .column {
+      display: flex;
+      flex-direction: column;
+      & > div {
+        margin: 10px;
+      }
+    }
+    .column1, .column3 {
+      width: 350px;
+    }
+
+    .column2 {
+      flex: 1;
+    }
+
+    :global(.ant-card) {
+      margin: 5px !important;
+    }
+    :global(.ant-card-body) {
+      padding: 10px;
+    }
+  }
+
+}
