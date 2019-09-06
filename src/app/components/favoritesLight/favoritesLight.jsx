@@ -5,6 +5,88 @@ import {Skeleton, Table, Spin, Button, Icon} from 'antd';
 import _ from 'lodash';
 import style from './favoritesLight.scss';
 
+//
+// const CollectionCreateForm = (
+//     <div>
+//       <p>
+//         i - процент изменения цены за период
+//       </p>
+//       <p>
+//         v - приращение объема в процентах по сравнению с предыдущим периодом
+//       </p>
+//       <p>
+//         s - изменения цены за 24 часа
+//       </p>
+//       <p>
+//         d - доминирование покупателя над продавцом (отношения объёмы покупок к объему продаж)
+//       </p>
+//     </div>
+// );
+
+
+// const CollectionCreateForm = Form.create({ name: 'form_in_modal' })(
+//     // eslint-disable-next-line
+//     class extends React.Component {
+//       render() {
+//         const { visible, onCancel, onCreate, form } = this.props;
+//         const { getFieldDecorator } = form;
+//         return (
+//             <Modal
+//                 visible={visible}
+//                 title="Настройки фаворитов"
+//                 okText="Задать"
+//                 onCancel={onCancel}
+//                 onOk={onCreate}
+//             >
+//               <Form layout="vertical" className={style.FavForm}>
+//                 <Form.Item label="Объём за 24 часа">
+//                   {getFieldDecorator('Volume24h', {
+//                     rules: [{ required: true, message: 'Введите корректное число' }],
+//                   })(<Input />)}
+//                 </Form.Item>
+//               </Form>
+//             </Modal>
+//         );
+//       }
+//     },
+// );
+//
+// const close = () => {
+//   console.log(
+//       'Notification was closed. Either the close button was clicked or duration time elapsed.',
+//   );
+// };
+//
+// const openNotification = () => {
+//   const key = `open${Date.now()}`;
+//   const btn = (
+//       <Button type="primary" size="small" onClick={() => notification.close(key)}>
+//         Подробнее
+//       </Button>
+//   );
+//   notification.open({
+//     message: 'Справка значений для фаворитов',
+//     duration: 0,
+//     description:
+//         'i - процент изменения цены за период \n v - приращение объема в процентах по сравнению с предыдущим периодом \n s - изменения цены за 24 часа \n d - доминирование покупателя над продавцом (отношения объёмы покупок к объему продаж)',
+//     btn,
+//     key,
+//     onClose: close,
+//   });
+// };
+
+// {/*<CollectionCreateForm*/}
+//     {/*wrappedComponentRef={this.saveFormRef}*/}
+//     {/*visible={state.visible}*/}
+//     {/*onCancel={this.handleCancel}*/}
+//     {/*onCreate={this.handleCreate}*/}
+// {/*/>*/}
+//
+// {/*CollectionCreateForm*/}
+//
+// {/*<Button type="primary" onClick={openNotification} className={style.legend}>*/}
+//     {/*Инфо*/}
+//     {/*</Button>*/}
 
 export default class FavoritesLight extends React.PureComponent {
 

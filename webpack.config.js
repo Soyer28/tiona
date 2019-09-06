@@ -104,6 +104,7 @@ module.exports = (env, argv) => {
         new OptimizeCSSAssetsPlugin({})
       ]
     },
+    devtool: "inline-source-map",
     devServer: proxy,
     plugins: [
       new HtmlWebPackPlugin({

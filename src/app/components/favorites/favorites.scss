@@ -86,7 +86,7 @@
   .form2 {
     display: inline-block;
     background-color: initial !important;
-    padding-left: 2%;
+    padding: 0.8%;
     height: 30px;
 
     div {
@@ -100,6 +100,35 @@
     div > div {
       line-height: initial;
       display: inline-block;
+    }
+  }
+
+  .form3 {
+    display: inline-block;
+    background-color: initial !important;
+    padding-left: 2%;
+    height: auto;
+    div {
+      display: inline-block;
+    }
+
+    label {
+      color: white;
+    }
+
+    div > div {
+      line-height: initial;
+      display: inline-block;
+    }
+    input {
+      width: 25%;
+      margin-left: 2%;
+      text-align: center;
+      display: inline-block;
+    }
+    input[type=submit] {
+      background-color: initial;
+      color: white;
     }
   }
 }

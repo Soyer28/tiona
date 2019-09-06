@@ -22,6 +22,7 @@ export default class Favorites extends React.PureComponent {
 
     state = {
 		data: [],
+        updated: 0,
 	};
 
     componentDidMount() {
@@ -36,6 +37,11 @@ export default class Favorites extends React.PureComponent {
 
     tick() {
         this.setState({date: this.state.date + 1});
+        const {loading, data} = this.props;
+
+        console.log(data[0]);
+
+        this.setState({updated: data[0].updated});
     }
 
     render() {
@@ -44,18 +50,18 @@ export default class Favorites extends React.PureComponent {
         let dataBase;
 
         if (data === undefined) {
-            console.log(data);
+            // console.log(data);
             dataBase = new Array({updated: 0});
         } else {
             _.map(data, function (object) {
                if (object.coin === 'ADA') {
-                   console.log(object);
+                   // console.log(object);
                }
             });
             dataBase = data;
         }
 
-        console.log(dataBase[0]);
+        console.log('RENDER', dataBase[0].updated);
 
 
 
@@ -65,7 +71,7 @@ export default class Favorites extends React.PureComponent {
                 <h2 style={{color: 'white'}}>It is {this.state.date}.</h2>
                 <h3>
                     {
-                        dataBase[0].updated
+                        this.state.updated
                     }
                 </h3>
             </div>

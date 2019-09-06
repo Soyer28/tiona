@@ -10,7 +10,9 @@ import 'moment/locale/ru';
 import {configure} from './api';
 
 const history = createBrowserHistory();
-const store = createStore({history});
+const store = createStore({history}, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()); // REDUX chrome extension - проверка экшенов
+
+console.log('store', history);
 
 configure();
 

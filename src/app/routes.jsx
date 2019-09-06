@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Redirect, Route, Switch, Router} from 'react-router-dom';
+
 import LoginPage from './pages/login';
 import AppLayout from './components/appLayout';
 import Strategy1 from './pages/strategy1';

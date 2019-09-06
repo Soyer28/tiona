@@ -17,6 +17,9 @@ export const lookupExchangeAccounts = () => client.get('/exchange_accounts/');
 export const indicatorVolatility = () => client.get('/favorites/');
 
 export const lookupFavorites = () => client.get('/favorites/');
+export const getFavorites = (id) => client.get(`/favorites/${id}/`);
+export const updateFavorites = (id, payload) => client.patch(`/favorites/${id}/`, payload);
+export const deleteFavorites = (id) => client.delete(`/favorites/${id}/`);
 
 export const favoritesLightVolatility = () => client.get('/favoritesLight_volatility/');
 

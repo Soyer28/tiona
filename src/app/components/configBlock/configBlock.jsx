@@ -25,6 +25,7 @@ export default class ConfigBlock extends React.PureComponent {
   };
 
   init = () => {
+    console.log('props', this.props);
     const {config} = this.props;
     this.setState({
       config: {
